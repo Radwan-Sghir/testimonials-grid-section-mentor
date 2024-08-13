@@ -76,10 +76,11 @@ body {
 }
 
 .testimonial-card:nth-child(1) {
+  position: relative;
   color: white;
-
   background-color: hsl(263, 55%, 52%);
 }
+
 .testimonial-card:nth-child(2) {
   color: white;
 
@@ -95,6 +96,15 @@ body {
   color: white;
 
   background-color: hsl(219, 29%, 14%);
+}
+
+.quotation {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 5;
 }
 .author-info {
   display: flex;
@@ -123,6 +133,8 @@ img {
   font-weight: var(--fw-semibold);
   line-height: 1.2;
   margin-top: 10px;
+  position: relative;
+  z-index: 50;
 }
 
 .testimonial-content {
